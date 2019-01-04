@@ -39,7 +39,7 @@ let counter = 0;
 for (let step in project.steps) {
     project.steps[step]["person"] = project.committee[counter];
     counter ++;
-    if (counter >= committee.length) counter = 0;
+    if (counter >= project.committee.length) counter = 0;
 }
 
 console.log(project)
